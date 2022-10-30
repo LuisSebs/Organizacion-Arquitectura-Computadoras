@@ -98,7 +98,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(340,1140)" to="(400,1140)"/>
     <wire from="(250,810)" to="(500,810)"/>
     <wire from="(250,890)" to="(500,890)"/>
-    <wire from="(500,1350)" to="(500,1360)"/>
     <wire from="(740,1270)" to="(930,1270)"/>
     <wire from="(250,660)" to="(250,670)"/>
     <wire from="(100,1160)" to="(280,1160)"/>
@@ -211,117 +210,27 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(210,1070)" to="(280,1070)"/>
     <wire from="(500,250)" to="(500,310)"/>
     <wire from="(550,910)" to="(690,910)"/>
-    <comp lib="6" loc="(71,44)" name="Text">
-      <a name="text" val="ACTIVIDAD 9.1"/>
-    </comp>
-    <comp lib="0" loc="(640,150)" name="Power">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="6" loc="(471,888)" name="Text">
-      <a name="text" val="A0"/>
-    </comp>
-    <comp lib="0" loc="(100,1340)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(475,805)" name="Text">
-      <a name="text" val="A0"/>
-    </comp>
-    <comp lib="0" loc="(410,200)" name="Transistor">
-      <a name="type" val="n"/>
-    </comp>
-    <comp lib="6" loc="(181,632)" name="Text">
-      <a name="text" val="n-type"/>
-    </comp>
-    <comp lib="6" loc="(470,1186)" name="Text">
-      <a name="text" val="NEG A0"/>
-    </comp>
-    <comp lib="6" loc="(256,631)" name="Text">
-      <a name="text" val="n-type"/>
-    </comp>
-    <comp lib="0" loc="(270,560)" name="Transistor"/>
-    <comp lib="0" loc="(290,120)" name="Pull Resistor">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="6" loc="(74,426)" name="Text">
-      <a name="text" val="ACTIVIDAD 9.2"/>
-    </comp>
-    <comp lib="6" loc="(471,906)" name="Text">
-      <a name="text" val="A1"/>
-    </comp>
-    <comp lib="6" loc="(51,1376)" name="Text">
-      <a name="text" val="B0"/>
-    </comp>
-    <comp lib="0" loc="(760,200)" name="Transistor">
+    <comp lib="0" loc="(270,640)" name="Transistor">
       <a name="type" val="n"/>
       <a name="gate" val="br"/>
     </comp>
-    <comp lib="6" loc="(150,466)" name="Text">
-      <a name="text" val="COMPUERTA XNOR CON TRANSISTORES"/>
+    <comp lib="0" loc="(210,140)" name="Transistor">
+      <a name="facing" val="north"/>
     </comp>
-    <comp lib="6" loc="(892,1262)" name="Text">
-      <a name="text" val="A &lt; B"/>
+    <comp lib="6" loc="(173,19)" name="Text">
+      <a name="text" val="ARRIETA MANCERA LUIS SEBASTIAN 318174116"/>
     </comp>
-    <comp lib="6" loc="(465,1306)" name="Text">
-      <a name="text" val="NEG A1"/>
+    <comp lib="6" loc="(467,849)" name="Text">
+      <a name="text" val="NEG B0"/>
     </comp>
-    <comp lib="6" loc="(155,547)" name="Text">
-      <a name="text" val="p-type"/>
+    <comp lib="6" loc="(314,987)" name="Text">
+      <a name="text" val="B0"/>
     </comp>
-    <comp lib="0" loc="(50,870)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
+    <comp lib="6" loc="(19,164)" name="Text">
+      <a name="text" val="P"/>
     </comp>
-    <comp lib="6" loc="(104,1375)" name="Text">
-      <a name="text" val="B1"/>
-    </comp>
-    <comp lib="1" loc="(360,1210)" name="NOT Gate"/>
-    <comp lib="1" loc="(800,930)" name="OR Gate">
+    <comp lib="1" loc="(550,1330)" name="AND Gate">
       <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="1" loc="(550,1210)" name="AND Gate">
-      <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="6" loc="(318,1207)" name="Text">
-      <a name="text" val="A1"/>
-    </comp>
-    <comp lib="0" loc="(70,600)" name="Power">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="6" loc="(103,841)" name="Text">
-      <a name="text" val="A1"/>
-    </comp>
-    <comp lib="0" loc="(200,640)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="gate" val="br"/>
-    </comp>
-    <comp lib="0" loc="(770,340)" name="Pull Resistor"/>
-    <comp lib="1" loc="(530,820)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(479,1328)" name="Text">
-      <a name="text" val="B0"/>
-    </comp>
-    <comp lib="6" loc="(480,1278)" name="Text">
-      <a name="text" val="B0"/>
-    </comp>
-    <comp lib="6" loc="(315,1008)" name="Text">
-      <a name="text" val="B1"/>
-    </comp>
-    <comp lib="6" loc="(173,71)" name="Text">
-      <a name="text" val="P -&gt; Q con compuerta OR y NOT implementada"/>
-    </comp>
-    <comp lib="6" loc="(262,1089)" name="Text">
-      <a name="text" val="B0"/>
-    </comp>
-    <comp lib="1" loc="(530,1270)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(740,70)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(570,250)" name="Pin">
       <a name="facing" val="west"/>
@@ -329,26 +238,38 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="6" loc="(469,987)" name="Text">
-      <a name="text" val="NEG B0"/>
+    <comp lib="6" loc="(479,1328)" name="Text">
+      <a name="text" val="B0"/>
     </comp>
-    <comp lib="6" loc="(263,1132)" name="Text">
-      <a name="text" val="A1"/>
+    <comp lib="0" loc="(270,560)" name="Transistor"/>
+    <comp lib="0" loc="(50,870)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
     </comp>
-    <comp lib="1" loc="(360,990)" name="NOT Gate"/>
-    <comp lib="1" loc="(360,1190)" name="NOT Gate"/>
-    <comp lib="1" loc="(550,990)" name="AND Gate">
-      <a name="inputs" val="3"/>
+    <comp lib="6" loc="(471,888)" name="Text">
+      <a name="text" val="A0"/>
     </comp>
-    <comp lib="6" loc="(252,731)" name="Text">
-      <a name="text" val="B"/>
+    <comp lib="6" loc="(20,365)" name="Text">
+      <a name="text" val="Q"/>
     </comp>
-    <comp lib="0" loc="(200,560)" name="Transistor"/>
-    <comp lib="0" loc="(40,260)" name="Power">
-      <a name="facing" val="west"/>
+    <comp lib="0" loc="(180,690)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
     </comp>
-    <comp lib="6" loc="(79,822)" name="Text">
-      <a name="text" val="Numero A"/>
+    <comp lib="0" loc="(740,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(480,1278)" name="Text">
+      <a name="text" val="B0"/>
+    </comp>
+    <comp lib="0" loc="(100,1340)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(700,360)" name="Transistor"/>
+    <comp lib="6" loc="(173,71)" name="Text">
+      <a name="text" val="P -&gt; Q con compuerta OR y NOT implementada"/>
     </comp>
     <comp lib="0" loc="(930,1270)" name="Pin">
       <a name="facing" val="west"/>
@@ -356,162 +277,21 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="6" loc="(747,37)" name="Text">
-      <a name="text" val="Compuerta OR implementada"/>
-    </comp>
-    <comp lib="1" loc="(550,910)" name="AND Gate">
-      <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="1" loc="(330,1150)" name="XNOR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(320,945)" name="Text">
-      <a name="text" val="B1"/>
-    </comp>
-    <comp lib="6" loc="(74,1395)" name="Text">
-      <a name="text" val="Numero B"/>
-    </comp>
-    <comp lib="6" loc="(382,262)" name="Text">
-      <a name="text" val="COMPUERTA OR"/>
-    </comp>
-    <comp lib="6" loc="(19,164)" name="Text">
-      <a name="text" val="P"/>
-    </comp>
-    <comp lib="0" loc="(840,170)" name="Pull Resistor">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="1" loc="(330,1060)" name="XNOR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(320,620)" name="Pull Resistor">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="6" loc="(182,735)" name="Text">
-      <a name="text" val="A"/>
-    </comp>
     <comp lib="6" loc="(262,1176)" name="Text">
       <a name="text" val="B1"/>
-    </comp>
-    <comp lib="6" loc="(467,1258)" name="Text">
-      <a name="text" val="NEG A0"/>
-    </comp>
-    <comp lib="6" loc="(468,1007)" name="Text">
-      <a name="text" val="NEG B1"/>
-    </comp>
-    <comp lib="6" loc="(888,1102)" name="Text">
-      <a name="text" val="A = B"/>
-    </comp>
-    <comp lib="0" loc="(100,870)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(920,930)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(172,779)" name="Text">
-      <a name="text" val="COMPARADOR BIRNARIO A &gt; B   A = B   A &lt; B"/>
-    </comp>
-    <comp lib="6" loc="(471,927)" name="Text">
-      <a name="text" val="NEG B1"/>
-    </comp>
-    <comp lib="0" loc="(180,690)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(475,963)" name="Text">
-      <a name="text" val="A1"/>
-    </comp>
-    <comp lib="1" loc="(740,1270)" name="OR Gate">
-      <a name="inputs" val="3"/>
     </comp>
     <comp lib="0" loc="(760,90)" name="Transistor">
       <a name="type" val="n"/>
     </comp>
-    <comp lib="1" loc="(360,1010)" name="NOT Gate"/>
-    <comp lib="6" loc="(285,549)" name="Text">
-      <a name="text" val="p-type"/>
-    </comp>
-    <comp lib="6" loc="(879,922)" name="Text">
-      <a name="text" val="A &gt; B"/>
-    </comp>
-    <comp lib="6" loc="(735,271)" name="Text">
-      <a name="text" val="Compuerta NOT Implementada"/>
-    </comp>
-    <comp lib="0" loc="(50,160)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(700,360)" name="Transistor"/>
-    <comp lib="6" loc="(333,845)" name="Text">
-      <a name="text" val="B0"/>
-    </comp>
-    <comp lib="6" loc="(467,849)" name="Text">
-      <a name="text" val="NEG B0"/>
-    </comp>
-    <comp lib="6" loc="(470,1207)" name="Text">
+    <comp lib="1" loc="(360,1190)" name="NOT Gate"/>
+    <comp lib="6" loc="(465,1306)" name="Text">
       <a name="text" val="NEG A1"/>
     </comp>
-    <comp lib="0" loc="(210,140)" name="Transistor">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="0" loc="(50,1340)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(480,1348)" name="Text">
-      <a name="text" val="B1"/>
-    </comp>
-    <comp lib="6" loc="(20,365)" name="Text">
-      <a name="text" val="Q"/>
-    </comp>
-    <comp lib="1" loc="(380,830)" name="NOT Gate"/>
-    <comp lib="6" loc="(318,1187)" name="Text">
-      <a name="text" val="A0"/>
+    <comp lib="1" loc="(550,990)" name="AND Gate">
+      <a name="inputs" val="3"/>
     </comp>
     <comp lib="0" loc="(50,360)" name="Pin">
       <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(740,220)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(430,1110)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(680,330)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(920,1110)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(250,690)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(360,600)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(50,842)" name="Text">
-      <a name="text" val="A0"/>
-    </comp>
-    <comp lib="6" loc="(377,86)" name="Text">
-      <a name="text" val="NEG P"/>
-    </comp>
-    <comp lib="0" loc="(870,140)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(850,360)" name="Pin">
       <a name="facing" val="west"/>
@@ -519,35 +299,254 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(640,360)" name="Power">
+    <comp lib="0" loc="(40,260)" name="Power">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="0" loc="(410,310)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="gate" val="br"/>
+    <comp lib="6" loc="(285,549)" name="Text">
+      <a name="text" val="p-type"/>
     </comp>
-    <comp lib="6" loc="(314,987)" name="Text">
-      <a name="text" val="B0"/>
+    <comp lib="6" loc="(475,963)" name="Text">
+      <a name="text" val="A1"/>
+    </comp>
+    <comp lib="1" loc="(360,990)" name="NOT Gate"/>
+    <comp lib="0" loc="(200,560)" name="Transistor"/>
+    <comp lib="0" loc="(920,1110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(104,1375)" name="Text">
+      <a name="text" val="B1"/>
+    </comp>
+    <comp lib="6" loc="(469,987)" name="Text">
+      <a name="text" val="NEG B0"/>
+    </comp>
+    <comp lib="6" loc="(74,1395)" name="Text">
+      <a name="text" val="Numero B"/>
+    </comp>
+    <comp lib="6" loc="(256,631)" name="Text">
+      <a name="text" val="n-type"/>
     </comp>
     <comp lib="6" loc="(263,1045)" name="Text">
       <a name="text" val="A0"/>
     </comp>
-    <comp lib="0" loc="(270,640)" name="Transistor">
+    <comp lib="6" loc="(150,466)" name="Text">
+      <a name="text" val="COMPUERTA XNOR CON TRANSISTORES"/>
+    </comp>
+    <comp lib="1" loc="(530,820)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(103,841)" name="Text">
+      <a name="text" val="A1"/>
+    </comp>
+    <comp lib="6" loc="(252,731)" name="Text">
+      <a name="text" val="B"/>
+    </comp>
+    <comp lib="0" loc="(360,600)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(155,547)" name="Text">
+      <a name="text" val="p-type"/>
+    </comp>
+    <comp lib="6" loc="(879,922)" name="Text">
+      <a name="text" val="A &gt; B"/>
+    </comp>
+    <comp lib="6" loc="(79,822)" name="Text">
+      <a name="text" val="Numero A"/>
+    </comp>
+    <comp lib="0" loc="(100,870)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(888,1102)" name="Text">
+      <a name="text" val="A = B"/>
+    </comp>
+    <comp lib="1" loc="(550,910)" name="AND Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="6" loc="(892,1262)" name="Text">
+      <a name="text" val="A &lt; B"/>
+    </comp>
+    <comp lib="0" loc="(70,600)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="6" loc="(172,779)" name="Text">
+      <a name="text" val="COMPARADOR BIRNARIO A &gt; B   A = B   A &lt; B"/>
+    </comp>
+    <comp lib="6" loc="(318,1187)" name="Text">
+      <a name="text" val="A0"/>
+    </comp>
+    <comp lib="6" loc="(470,1186)" name="Text">
+      <a name="text" val="NEG A0"/>
+    </comp>
+    <comp lib="0" loc="(740,220)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(71,44)" name="Text">
+      <a name="text" val="ACTIVIDAD 9.1"/>
+    </comp>
+    <comp lib="6" loc="(468,1007)" name="Text">
+      <a name="text" val="NEG B1"/>
+    </comp>
+    <comp lib="0" loc="(640,150)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="1" loc="(330,1150)" name="XNOR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(430,1110)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(200,640)" name="Transistor">
       <a name="type" val="n"/>
       <a name="gate" val="br"/>
     </comp>
-    <comp lib="1" loc="(360,930)" name="NOT Gate"/>
-    <comp lib="6" loc="(173,19)" name="Text">
-      <a name="text" val="ARRIETA MANCERA LUIS SEBASTIAN 318174116"/>
+    <comp lib="0" loc="(410,200)" name="Transistor">
+      <a name="type" val="n"/>
     </comp>
-    <comp lib="6" loc="(470,1228)" name="Text">
+    <comp lib="0" loc="(640,360)" name="Power">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(840,170)" name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(262,1089)" name="Text">
+      <a name="text" val="B0"/>
+    </comp>
+    <comp lib="6" loc="(467,1258)" name="Text">
+      <a name="text" val="NEG A0"/>
+    </comp>
+    <comp lib="6" loc="(333,845)" name="Text">
+      <a name="text" val="B0"/>
+    </comp>
+    <comp lib="1" loc="(360,930)" name="NOT Gate"/>
+    <comp lib="6" loc="(480,1348)" name="Text">
+      <a name="text" val="B1"/>
+    </comp>
+    <comp lib="1" loc="(740,1270)" name="OR Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="6" loc="(382,262)" name="Text">
+      <a name="text" val="COMPUERTA OR"/>
+    </comp>
+    <comp lib="0" loc="(770,340)" name="Pull Resistor"/>
+    <comp lib="1" loc="(380,830)" name="NOT Gate"/>
+    <comp lib="0" loc="(250,690)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(320,945)" name="Text">
       <a name="text" val="B1"/>
     </comp>
     <comp lib="0" loc="(540,280)" name="Pull Resistor">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="1" loc="(550,1330)" name="AND Gate">
+    <comp lib="0" loc="(760,200)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="gate" val="br"/>
+    </comp>
+    <comp lib="0" loc="(870,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(550,1210)" name="AND Gate">
       <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="6" loc="(377,86)" name="Text">
+      <a name="text" val="NEG P"/>
+    </comp>
+    <comp lib="0" loc="(680,330)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(74,426)" name="Text">
+      <a name="text" val="ACTIVIDAD 9.2"/>
+    </comp>
+    <comp lib="1" loc="(530,1270)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(181,632)" name="Text">
+      <a name="text" val="n-type"/>
+    </comp>
+    <comp lib="1" loc="(330,1060)" name="XNOR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(182,735)" name="Text">
+      <a name="text" val="A"/>
+    </comp>
+    <comp lib="6" loc="(475,805)" name="Text">
+      <a name="text" val="A0"/>
+    </comp>
+    <comp lib="1" loc="(360,1010)" name="NOT Gate"/>
+    <comp lib="6" loc="(471,927)" name="Text">
+      <a name="text" val="NEG B1"/>
+    </comp>
+    <comp lib="6" loc="(51,1376)" name="Text">
+      <a name="text" val="B0"/>
+    </comp>
+    <comp lib="6" loc="(735,271)" name="Text">
+      <a name="text" val="Compuerta NOT Implementada"/>
+    </comp>
+    <comp lib="1" loc="(800,930)" name="OR Gate">
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="6" loc="(471,906)" name="Text">
+      <a name="text" val="A1"/>
+    </comp>
+    <comp lib="0" loc="(320,620)" name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(470,1207)" name="Text">
+      <a name="text" val="NEG A1"/>
+    </comp>
+    <comp lib="1" loc="(360,1210)" name="NOT Gate"/>
+    <comp lib="6" loc="(263,1132)" name="Text">
+      <a name="text" val="A1"/>
+    </comp>
+    <comp lib="6" loc="(50,842)" name="Text">
+      <a name="text" val="A0"/>
+    </comp>
+    <comp lib="6" loc="(315,1008)" name="Text">
+      <a name="text" val="B1"/>
+    </comp>
+    <comp lib="0" loc="(50,1340)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(50,160)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(290,120)" name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="6" loc="(470,1228)" name="Text">
+      <a name="text" val="B1"/>
+    </comp>
+    <comp lib="0" loc="(920,930)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(410,310)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="gate" val="br"/>
+    </comp>
+    <comp lib="6" loc="(318,1207)" name="Text">
+      <a name="text" val="A1"/>
+    </comp>
+    <comp lib="6" loc="(747,37)" name="Text">
+      <a name="text" val="Compuerta OR implementada"/>
     </comp>
   </circuit>
 </project>
