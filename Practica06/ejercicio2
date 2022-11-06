@@ -1,0 +1,21 @@
+#Escribe un programa que calcule el maximo comun divisor de dos numeros
+.text 
+	
+	#Cargamos el numero 1 desde consola
+	li $v0 5 # Solicitamos un entero desde consola
+	syscall
+	move $a0, $v0 # Movemos el numero introducido por consola al registro $a0
+	
+	li $v0 5 # Solicitamos un entero desde consola
+	syscall
+	move $a1, $v0 # Movemos el numero introducido por consola al registro $a1
+	
+	mcd:
+		beqz $a1, fin # En caso de que el residuo sea cero se termina la ejecucion
+		div $a0 $a1 # Hacemos la division de $a0 / $a1. EL cociente se guarda en $lo y el residuo en $hi
+		move $a0 $a1 # A pasa a ser B 
+		mfhi $a1 # B pasa a ser el residuo ($hi). Movemos al registro $a1 el valor de $hi (residuo)
+		j mcd # jump to mcd. Vuelve a ejecutar la funcion mcd.
+	fin:
+	   move $v0 $a0 # Movemos el resultado al registro $v0 y terminamos
+	

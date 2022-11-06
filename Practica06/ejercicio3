@@ -1,0 +1,50 @@
+# Programa que calcula el cociente y el residuo	de una division sin usar div
+
+#RECORDEMOS QUE EN UNA DIVISION
+#				 ___16___----------COCIENTE
+#	DIVISOR	------------- 5	|   84 ---------------------DIVIDENDO
+#				 ___80_____
+#				     4 ----------------------RESIDUO	
+
+.text
+	# Usaremos 4 registros
+	# $a0 : a (el numero que va dentro de la casita (dividendo))
+	# $a1 : b (el numero que va fuera de la casita (divisor))
+	# $t0 : cociente
+	# $t1 : residuo
+	
+	# Solicitamos el dividendo por consola
+	li $v0 5 
+	syscall
+	# Movemos el numero al registro $a0
+	move $a0 $v0 
+	
+	# Solicitamos el divisor por consola
+	li $v0 5
+	syscall
+	move $a1 $v0
+	
+	# Inicializamos el cociente y el residuo
+	li $t0 0
+	li $t1 0
+	
+	# RECORDEMOS QUE EL DIVISOR NO PUEDE SER CERO
+	beqz $a1, end 
+	# EN CASO CONTRARIO SEGUIMOS CON EL PROCEDIMIENTO
+division :
+	bleu $t1, $a0, cociente # ($t1 <= $a0) 		En caso de que el residuo quepa en el dividendo incrementamos el cociente
+	sub $t0, $t0, 1 	# ($t0 - 1)	 	Le restamos 1 al cociente 
+	mul $t1, $t0, $a1 	# ($t1 = $t0 * $a1) 	Multiplicamos el divisor por el cociente y lo guardamos en el residuo
+	sub $t1, $a0, $t1  	# ($t1 = $a0 - $t1) 	Restamos el residuo al dividendo para calcular el residuo final
+	move $v0, $t0 		# 			Movemos el cociente al registro $v0
+	move $v1, $t1 		#			Movemos el residuo al registro $v1
+	j end
+cociente :
+	add $t0, $t0, 1 # Incrementamos el cociente en 1
+	mul $t1, $a1, $t0 # Multiplicamos el divisor por el cociente y guardamos el valor en el residuo
+	j division
+
+end: # NO HAGAS NADA YA TERMINO EL PROGRAMA
+	
+	
+	

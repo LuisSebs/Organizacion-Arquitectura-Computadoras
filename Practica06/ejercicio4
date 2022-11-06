@@ -1,0 +1,60 @@
+# Ejercicio 4. Emplear el coprocesador y las instrucciones de punto flotante de precision sencilla
+.data
+	m: 		.word 1		# m fungira tambien como n, m = n
+	cero: 		.float 0.0
+	menosuno: 	.float -1.0
+	unof: 		.float 1.0
+	dosf: 		.float 2.0
+	dos: 		.word 2
+	cuatrof:	.float 4.0 	# constante 4 flotante
+	ochof: 		.float 8
+	
+.text
+	lw   $t0, m		# $t0 sera el valor m 
+	lw   $t2, dos 		# $t2 almacena la constante 2 entero
+	lwc1 $f0, cero		# $f0 sera nuestro resultado final inicializado en 0
+	lwc1 $f1, menosuno	# $f1 sera la parte (-1)^n 
+	lwc1 $f2, dosf 		# $f2 sera la constante 2 flotante
+	lwc1 $f3, unof		# $f3 sera la constante 1 flotante
+	
+serie:
+	mtc1 $t0, $f12		# $f12 = m   sera el valor m flotante
+	cvt.s.w $f12, $f12	# $f12 = (float) m  convertimos el entero a flotante
+	
+	# Parte1 = (-1)^n
+	# Funcion que determina la paridad de n para determinar el resultado de (-1)^n
+	paridad:
+		div 	$t0, $t2	# dividimos m entre 2, (m/2)
+		mfhi 	$t1		# movemos el residuo a $t1
+		beqz 	$t1, par	# si el residuo es cero entonces el numero es par
+		j impar 		# en caso contrario entonces  el  numero es impar
+
+	# Funcion que establece $f1 = 1, ya que (-1)^n = 1 con n = 2k
+	par:
+		lwc1 $f1, unof		# establecemos $f1 = 1
+		j parte2
+		
+	impar:
+		lwc1 $f1, menosuno
+		
+	# Parte2 =  2n + 1
+	parte2:
+		mul.s $f4, $f12, $f2	# multiplicamos 2n y lo guardamos en $f4
+		add.s $f4, $f4, $f3	# $f4 = 2n + 1
+	
+	# Parte3 = (-1)^n /  2n + 1
+	parte3:
+		div.s $f4, $f1, $f4	# dividimos $f1 / $f4 y lo guardamos en $f4, --> $f4 = (-1)^n /  2n + 1
+	
+	# Agrega al resultado
+	suma:
+		add.s $f0, $f0, $f4	# $f0 = $f0 + $f4, agregamos el resultado de la iteracion al resultado final
+		sub   $t0, $t0, 1	# restamos 1 al valor de m, $t0 = $t0 - 1
+		blt   $t0, $zero, end	# si $t0 es menor a 0 entonces terminamos, --> if ($t0 < 0) then end 
+		j serie			# en caso contrario continua con la seria pero ahora con n = m -1
+	
+	# Multiplicamos por 4 la sumatoria y terminamos
+	end: 
+		lwc1 	$f1, cuatrof	# $f1 = 4.0
+		mul.s 	$f0, $f1, $f0	# $f0 = $f1 * $f0
+		

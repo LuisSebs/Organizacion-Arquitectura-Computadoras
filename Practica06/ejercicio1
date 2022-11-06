@@ -1,0 +1,7 @@
+# Copiar el contenido de un registro a otro sin usar move
+.text 
+	li $v0 5 # Registro 1 con valor 5
+	li $v1 7 # Registro 2 con valor 7
+	add $t0 $v0 $zero # Usamos un registro temporal para guardar una copia del numero 5
+	add $v0 $v1 $zero # Pasamos el valor del Registro 2 (7) al Registro 1
+	add $v1 $t0 $zero # Pasamos el valor del registro temporal (5) al Registro 2
