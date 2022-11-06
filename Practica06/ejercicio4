@@ -57,4 +57,8 @@ serie:
 	end: 
 		lwc1 	$f1, cuatrof	# $f1 = 4.0
 		mul.s 	$f0, $f1, $f0	# $f0 = $f1 * $f0
-		
+
+# Se uso como referencia las siguientes fuentes:
+# https://stackoverflow.com/questions/16627963/convert-integer-to-double-in-mips   pasar de un entero a un float o double	
+# https://stackoverflow.com/questions/35997848/mips-convert-float-into-an-integer  pasar de un float a un entero
+# http://informatica.uv.es/seguia/FAC/Teoria/IEEE-754.htm   se uso para comprobar los resultados en hexadecimal
