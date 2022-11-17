@@ -1,6 +1,6 @@
 # Ejercicio 4. Emplear el coprocesador y las instrucciones de punto flotante de precision sencilla
 .data
-	m: 		.word 1	# m fungira como n, m = n. Con m in N, i.e. m en los numeros naturales. PUEDES MODIFICARLO.
+	m: 		.word 60	# m fungira como n, m = n. Con m in N, i.e. m en los numeros naturales. PUEDES MODIFICARLO.
 	cero: 		.float 0.0	# constante 0 flotante
 	menosunof: 	.float -1.0	# consante -1 flotante
 	unof: 		.float 1.0	# constante 1 flotante
